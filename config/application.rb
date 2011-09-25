@@ -43,7 +43,7 @@ module DeviseNeo4jExample
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-    
+
     config.neo4j.storage_path = Rails.root.join("db", "neo4j")
     config.neo4j["neostore.nodestore.db.mapped_memory"] = "0M"
     config.neo4j["neostore.relationshipstore.db.mapped_memory"] = "0M"
